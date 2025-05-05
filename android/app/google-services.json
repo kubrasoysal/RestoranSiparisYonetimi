@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "1057400678827",
+    "project_id": "gastroviaapp",
+    "storage_bucket": "gastroviaapp.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1057400678827:android:ba032cb6dc13cff2cd8aee",
+        "android_client_info": {
+          "package_name": "com.example.gastrovia"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCAI7jjgHMTdmt3RAxhm0gzWE-22kpHmO0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1057400678827:android:65ca8e95bba8ea68cd8aee",
+        "android_client_info": {
+          "package_name": "com.example.gastrovia_v2"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCAI7jjgHMTdmt3RAxhm0gzWE-22kpHmO0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
