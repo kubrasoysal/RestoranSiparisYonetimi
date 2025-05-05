@@ -1,16 +1,40 @@
-# gastrovia_v2
+# Gastrovia – Mobil Restoran Sipariş Uygulaması
 
-A new Flutter project.
+Bu proje, bir restoranın dijital sipariş yönetimini sağlamak amacıyla Flutter ile geliştirilmiş bir mobil uygulamadır. Uygulama, Firebase ile entegre çalışarak kullanıcı kimlik doğrulaması, menü yönetimi, sipariş takibi ve ödeme ekranı gibi işlevleri barındırır.
 
-## Getting Started
+## Proje Geliştirme Süreci
 
-This project is a starting point for a Flutter application.
+### 1. Hafta – Firebase Kurulumu ve Kimlik Doğrulama
+- Firebase projesi oluşturuldu.
+- Uygulama Firebase’e bağlandı.
+- Giriş ve kayıt ekranları oluşturuldu.
+- Firebase Authentication kullanılarak kullanıcı yönetimi sağlandı.
 
-A few resources to get you started if this is your first Flutter project:
+### 2. Hafta – Menü Arayüzü ve Görseller
+- Uygulama içi görsel yapılar (kategori kartları vs.) hazırlandı.
+- Menü sayfası tasarlandı.
+- Görseller assets klasörüne eklendi ve pubspec.yaml dosyasında tanımlandı.
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+### 3. Hafta – Firestore ile Menü Dinamik Yapısı
+- Firestore veritabanına kategori ve ürün verileri eklendi.
+- Menü ekranı Firestore'dan dinamik olarak yüklenecek şekilde geliştirildi.
+- Kategori ve ürün listeleme mantığı tamamlandı.
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+### 4. Hafta – Sepet Sistemi
+- Kullanıcıların ürünleri sepete eklemesi sağlandı.
+- Sepet ekranında ürünler görüntülendi.
+- Ürün silme ve toplam tutarı hesaplama işlemleri yapıldı.
+
+### 5. Hafta – Sipariş Verme, Geçmiş ve Ödeme Simülasyonu
+- Sipariş verme işlemi Firestore’a kayıt olarak eklendi.
+- Kullanıcının geçmiş siparişleri listelendi.
+- Temsili bir ödeme ekranı hazırlandı.
+
+## Teknik Özellikler
+- Flutter (Dart)
+- Firebase Auth
+- Cloud Firestore
+- Provider (State Management)
+
+## Notlar
+GitHub'a yükleme sırasında bazı commit geçmişleri teknik sebeplerle yeniden yazıldı. Bu nedenle commit geçmişinde yalnızca son haftanın mesajı görünmekte ancak **projede 1. haftadan itibaren tüm özellikler eksiksiz olarak mevcuttur**. 
