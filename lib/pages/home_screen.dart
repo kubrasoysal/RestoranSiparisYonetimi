@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
-import '../main.dart'; // AuthWrapper için
+import '../pages/orders_history_page.dart';
+import '../main.dart'; 
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -26,11 +27,15 @@ class HomeScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Gastrovia Menü'),
-        backgroundColor: Colors.deepOrange,
+        title: Text(
+    'Hoş geldin, ${FirebaseAuth.instance.currentUser?.email ?? 'kullanıcı'}',
+    style: const TextStyle(fontSize: 16),
+  ),
+        backgroundColor: Colors.orange,
         actions: [
           IconButton(
             icon: const Icon(Icons.logout),
+            tooltip: 'Çıkış Yap',
             onPressed: () async {
               await FirebaseAuth.instance.signOut();
               Navigator.of(context).pushReplacement(
@@ -91,7 +96,6 @@ class HomeScreen extends StatelessWidget {
             );
           }
 
-          // Sonuna toplam fiyatı ekle
           widgets.add(
             Padding(
               padding: const EdgeInsets.all(16.0),

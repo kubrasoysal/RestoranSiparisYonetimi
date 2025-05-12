@@ -17,8 +17,8 @@ final List<Map<String, dynamic>> menuData = [
       {"ad": "Çiğköfte", "fiyat": 140, "gorsel": "assets/images/aparatifler/cigkofte.jpg"},
       {"ad": "Soğan Halkası", "fiyat": 130, "gorsel": "assets/images/aparatifler/sogan_halkasi.jpg"},
       {"ad": "Patates Kızartması", "fiyat": 140, "gorsel": "assets/images/aparatifler/patates_kizartmasi.jpg"},
-      {"ad": "Börek Çeşitleri", "fiyat": 140, "gorsel": "assets/images/aparatifler/borek.jpg"},
-      {"ad": "Salata Çeşitleri", "fiyat": 120, "gorsel": "assets/images/aparatifler/salata.jpg"},
+      {"ad": "Börek Çeşitleri", "fiyat": 140, "gorsel": "assets/images/aparatifler/borek_cesitlerş.jpg"},
+      {"ad": "Salata Çeşitleri", "fiyat": 120, "gorsel": "assets/images/aparatifler/salata_cesitleri.jpg"},
     ]
   },
   {

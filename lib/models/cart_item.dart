@@ -1,6 +1,6 @@
 class CartItem {
   final String name;
-  final int price;
+  final double price;
   final String? imagePath;
 
   CartItem({
