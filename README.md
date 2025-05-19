@@ -41,12 +41,18 @@ Proje, 6 haftalık bir geliştirme süreciyle adım adım inşa edilmiştir.
 
 ---
 
-###  6. Hafta – Gerçek Zamanlı Sipariş Takibi ve Admin Paneli
+###  6. Hafta – Gerçek Zamanlı Sipariş Takibi 
 - Sipariş geçmişi ekranı oluşturuldu  
 - Her siparişin durumu (`alındı`, `hazırlanıyor`, `yolda`, `teslim edildi`) anlık olarak takip edilebildi  
-- Admin için sipariş yönetim ekranı geliştirildi  
 - Kullanıcı arayüzü 3 sekmeli yapıya geçirildi (Menü, Sepet, Siparişlerim)
 
+---
+
+###  7. Hafta – Bildirim Sistemi
+- Firebase Cloud Messaging entegrasyonu yapıldı
+- Kullanıcı giriş yaptıktan sonra cihazdan alınan FCM token Firestore'a kaydedildi
+- Sipariş durumları değiştiğinde ilgili kullanıcıya bildirim gönderilmesi için altyapı oluşturuldu
+- Firestore'da composite index yapılandırması ile sipariş listeleme hataları giderildi
   
 -----------------------------------------------------------------------------------------------
 
