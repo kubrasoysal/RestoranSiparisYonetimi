@@ -2,7 +2,6 @@
 
 Bu proje, Flutter ve Firebase kullanılarak geliştirilmiş bir restoran sipariş yönetim sistemidir.  
 Mobil kullanıcılar menüyü görüntüleyebilir, ürünleri sepete ekleyebilir, ödeme yapabilir ve sipariş durumlarını takip edebilir.  
-Proje, 6 haftalık bir geliştirme süreciyle adım adım inşa edilmiştir.
 
 ---
 
