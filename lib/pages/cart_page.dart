@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import '../providers/cart_provider.dart';
+import '../pages/payment_screen.dart'; // 💥 Bunu ekledik
 
 class CartPage extends StatelessWidget {
   const CartPage({super.key});
@@ -22,7 +23,11 @@ class CartPage extends StatelessWidget {
                     itemBuilder: (context, index) {
                       final item = cartItems[index];
                       return ListTile(
-                        leading: Image.asset(item.imagePath ?? '', width: 50, errorBuilder: (_, __, ___) => const Icon(Icons.image)),
+                        leading: Image.asset(
+                          item.imagePath ?? '',
+                          width: 50,
+                          errorBuilder: (_, __, ___) => const Icon(Icons.image),
+                        ),
                         title: Text(item.name),
                         subtitle: Text("${item.price} ₺"),
                         trailing: IconButton(
@@ -43,14 +48,23 @@ class CartPage extends StatelessWidget {
                       const SizedBox(height: 10),
                       ElevatedButton(
                         onPressed: () {
-                          Navigator.pushNamed(context, '/payment', arguments: {
-                            'items': cartItems.map((item) => {
+                          print("🟢 Siparişi Ver butonuna basıldı");
+
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                              builder: (_) => PaymentScreen(
+                                items: cartItems.map((item) => {
                                   'name': item.name,
                                   'price': item.price,
-                                  'imagePath': item.imagePath
                                 }).toList(),
-                            'total': cart.totalPrice,
-                          });
+                                total: cart.totalPrice,
+                                onPaymentSuccess: () {
+                                  cart.clearCart();
+                                },
+                              ),
+                            ),
+                          );
                         },
                         child: const Text("Siparişi Ver"),
                       ),
